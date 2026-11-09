@@ -1,0 +1,18 @@
+[project]
+name = "pr-flow-review"
+version = "0.1.2"
+description = "Local, source-backed pull request flow explorer"
+requires-python = ">=3.11"
+dependencies = [
+    "tree-sitter>=0.25,<0.26",
+    "tree-sitter-javascript>=0.25,<0.26",
+    "tree-sitter-typescript>=0.23,<0.24",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+desktop = [
+    "pyinstaller==6.19.0",
+]

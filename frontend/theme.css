@@ -1,0 +1,68 @@
+/* Midnight: the navy and cyan palette selected in the theme preview. */
+:root {
+  color-scheme: dark;
+  --page: #0a1425;
+  --surface: #101e33;
+  --surface-inset: #0d1a2e;
+  --raised: #152740;
+  --text: #e3edf9;
+  --text-muted: #91a6c3;
+  --border: #263b58;
+  --accent: #61d4e7;
+  --accent-hover: #8be4f1;
+  --on-accent: #082b36;
+  --accent-soft: #183747;
+  --hover: #182a43;
+  --canvas: #0b192c;
+  --graph-dot: #2b405b;
+  --graph-line: #7897b8;
+  --minimap-mask: #0b192cb3;
+  --selected-node: #153340;
+  --added: #82dcb6;
+  --added-soft: #12372f;
+  --modified: #e7c183;
+  --modified-soft: #382f22;
+  --removed: #f0a1ae;
+  --removed-soft: #3e273b;
+  --moved: #9db9f3;
+  --moved-soft: #233655;
+  --moved-modified: #c2abfa;
+  --moved-modified-soft: #302b4b;
+  --code-text: #c8dcf4;
+  --shadow: #00000025;
+  --focus-ring: #61d4e730;
+  --backdrop: #020916b8;
+
+  --xy-background-color: var(--canvas);
+  --xy-edge-stroke-default: var(--graph-line);
+  --xy-edge-stroke-selected-default: var(--accent);
+  --xy-edge-label-color-default: var(--text-muted);
+  --xy-edge-label-background-color-default: var(--canvas);
+  --xy-node-color-default: var(--text);
+  --xy-node-background-color-default: var(--raised);
+  --xy-minimap-background-color-default: var(--surface-inset);
+  --xy-minimap-mask-background-color-default: #0b192cb3;
+  --xy-controls-button-background-color-default: var(--raised);
+  --xy-controls-button-background-color-hover-default: var(--hover);
+  --xy-controls-button-color-default: var(--text-muted);
+  --xy-controls-button-color-hover-default: var(--text);
+  --xy-controls-button-border-color-default: var(--border);
+}
+
+.graph-canvas, .architecture-canvas { background-color: var(--canvas); }
+.primary-button, .brand-mark { color: var(--on-accent); }
+.primary-button:hover:not(:disabled) { background: var(--accent-hover); }
+.secondary-button { color: var(--text); background: var(--raised); }
+.code-view { background: var(--surface-inset); }
+input, textarea, select { caret-color: var(--accent); }
+::selection { color: var(--text); background: var(--accent-soft); }
+
+.status-dot { background: var(--text-muted); }
+.status-dot.added, .graph-legend i.added, .local-badge > span { background: var(--added); }
+.status-dot.modified, .graph-legend i.modified, .amber-dot { background: var(--modified); }
+.status-dot.removed, .graph-legend i.removed { background: var(--removed); }
+.status-dot.moved { background: var(--moved); }
+.status-dot.moved_modified { background: var(--moved-modified); }
+.teal-dot { background: var(--accent); }
+.progress-banner { color: var(--accent); background: var(--accent-soft); }
+.review-error { color: var(--removed); background: var(--removed-soft); }

@@ -1,0 +1,34 @@
+/* Keep the application controls compact so source code gets the page space. */
+.app-shell .app-header { height: 44px; padding: 0 20px; }
+.app-shell .brand { gap: 8px; }
+.app-shell .brand-mark { width: 26px; height: 28px; border-radius: 6px; box-shadow: none; }
+.app-shell .brand > span:last-child { font-size: 19px; letter-spacing: -.6px; }
+.app-shell main { padding: 14px 20px 20px; }
+.app-shell .workspace-title { min-height: 0; gap: 16px; margin-bottom: 12px; }
+.app-shell .workspace-title > div { min-width: 0; }
+.app-shell .workspace-title h1 { font-size: 18px; letter-spacing: -.3px; }
+.app-shell .workspace-title p { gap: 9px; margin-top: 5px; font-size: 11px; }
+.app-shell .compare-toggle { margin-top: 0; padding: 7px 10px; font-size: 11px; flex-shrink: 0; }
+.app-shell .analysis-form { padding: 12px 14px 10px; margin-bottom: 12px; }
+.app-shell .analysis-form input:not([type=checkbox]) { padding-block: 9px; }
+.app-shell .input-with-icon > svg { top: 10px; }
+.app-shell .analyze-button { min-width: 136px; height: 36px; }
+.app-shell .form-bottomline { margin-top: 8px; }
+.app-shell .analysis-meta { margin-bottom: 8px; }
+.app-shell .pr-review-overview { margin: 8px 0 4px; }
+.app-shell .pr-review-overview summary { padding-block: 9px; }
+.app-shell .review-subject { padding-block: 8px; }
+.app-shell .progress-banner { margin-bottom: 12px; padding: 11px 14px; }
+
+@media (max-width: 700px) {
+  .app-shell .app-header { height: 40px; padding-inline: 12px; }
+  .app-shell main { padding: 10px 12px 16px; }
+  .app-shell .workspace-title { gap: 10px; }
+  .app-shell .workspace-title h1 { font-size: 16px; }
+  .app-shell .compare-toggle { font-size: 0; padding: 7px; }
+  .app-shell .analysis-form { padding: 11px 12px 9px; }
+  .app-shell .analysis-form label > span:first-child { font-size: 11px; }
+  .app-shell .analysis-form input:not([type=checkbox]) { font-size: 12px; }
+  .app-shell .analyze-button { font-size: 12px; }
+  .app-shell .advanced-toggle { font-size: 11px; }
+}
